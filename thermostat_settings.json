@@ -1,0 +1,57 @@
+{
+    "calibration": {
+        "boilingMeasured": 99.098043,
+        "elevation": 100,
+        "freezingMeasured": 0.01
+    },
+    "logging": {
+        "channel": "file",
+        "level": "error"
+    },
+    "ble": {
+        "clientID": "IDTW211R",
+        "enabled": 0,
+	"mac": "",
+	"correct_enabled" : 0,
+	"timeout" : 300,
+	"timeout_correct" : 60
+    },
+    "pir": {
+        "pirCheckInterval": 0.5,
+        "pirEnabled": 0,
+        "pirIgnoreFrom": "00:00",
+        "pirIgnoreTo": "00:00",
+        "pirPin": 5
+    },
+    "scale": {
+        "tempScale": "metric"
+    },
+    "thermostat": {
+        "lightPin": 24,
+        "fanPin": 18,
+        "heatPin": 27,
+        "maxTemp": 25.0,
+        "minTemp": 15.0,
+        "minUIEnabled": 1,
+        "minUITimeout": 30,
+        "tempCheckInterval": 5,
+        "tempHysteresis": 0.2,
+        "tempStep": 0.5,
+	"tempice": 15,
+	"lightOff": 60,
+	"user" : "termo",
+	"pass" : "pass"
+    },
+    "weather": {
+        "appkey": "d6c82d02416r68156d34e55b166a2a21",
+        "forecastRefreshInterval": 60,
+        "location": "4179190",
+        "weatherExceptionInterval": 5,
+        "weatherRefreshInterval": 60,
+        "URLtimeout": 5
+    },
+    "web": {
+        "host": "discover",
+        "port": 80
+    }
+}
