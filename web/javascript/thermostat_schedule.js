@@ -92,18 +92,18 @@ ScheduleEntry.prototype.hhmmFromX = function( x ) {
 }
 
 
-function ScheduleSlider( schedule, day, canvas, imgref, selref, otherSS ) {
+function ScheduleSlider( schedule, day, canvas, imgref, selref, otherSS ,giorno) {
   // **** First some setup! ****
   
   this.canvas 	= canvas;
   this.width 	= canvas.width;
   this.height 	= canvas.height;
-  this.ctx 		= canvas.getContext( '2d' );
+  this.ctx 	= canvas.getContext( '2d' );
   this.margin  	= { top: 10, left: 20, right: 20, bottom: 10 };
 
   this.schedule = schedule;
   this.day      = day;
-
+  this.oggi	= giorno;
   this.otherSS 	= otherSS;
   
   this.img 		= document.getElementById( imgref );
@@ -315,7 +315,7 @@ ScheduleSlider.prototype.drawDecorators = function( ctx ) {
 	ctx.font = 'bold 10pt Arial';
 	ctx.fillStyle = "black";
 	ctx.textAlign = "left";
-    ctx.fillText( this.day, 5, 15 );
+    ctx.fillText( this.oggi, 5, 15 );
 
 	// Draw x-axis
 	ctx.strokeStyle = '#777777';

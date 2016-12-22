@@ -31,6 +31,7 @@
 
 	var schedules = [ "heat", "cool" ];
 	var days = [ "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday" ];
+	var oggi = ["Lunedi", "Martedi", "Mercoledi", "Giovedi", "Venerdi", "Sabato", "Domenica" ];
 	var scheduleSliders = [];
 
 	$.ajaxSetup( { cache: false } );
@@ -55,7 +56,7 @@
 
 			$('<br>').appendTo( "#" + schedule );
 
-			var ss = new ScheduleSlider( schedule, days[ i ], canvas, "pointer", "pointer-selected", scheduleSliders );
+			var ss = new ScheduleSlider( schedule, days[ i ], canvas, "pointer", "pointer-selected", scheduleSliders ,oggi[i]);
 			
 			scheduleSliders.push( ss );
 		

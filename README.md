@@ -124,7 +124,7 @@ L'autore ha usato un Raspberry Pi 2 Model B per il suo termostato. Un Pi meno ca
 	
 	No AUTO e No MAN : il set temp viene impostato a No Ice (no ghiaccio) (livello di temperatura impostabile nel file Setting.json)
 
-##Temperature Sensor Calibration:
+##Calibrazione Sensore di Temperatura:
 
 E' supportata la calibrazione del sensore di temperatua DS18B20 seguendo il metodo qui riportato: https://learn.adafruit.com/calibrating-sensors/two-point-calibration
 
