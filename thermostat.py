@@ -966,7 +966,7 @@ def show_minimal_ui( dt ):
 
 def light_off( dt ):
 	with thermostatLock:
-		GPIO.output( lightPin, GPIO.HIGH )
+		GPIO.output( lightPin, GPIO.LOW )
 		log( LOG_LEVEL_DEBUG, CHILD_DEVICE_SCREEN, MSG_SUBTYPE_TEXT, "Screen Off" )
 		
 class MinimalScreen( Screen ):
@@ -986,7 +986,7 @@ class MinimalScreen( Screen ):
 					Clock.unschedule( show_minimal_ui )	
 				minUITimer = Clock.schedule_once( show_minimal_ui, minUITimeout )
 				lighOffTimer = Clock.schedule_once( light_off, lightOff )
-				GPIO.output( lightPin, GPIO.LOW )
+				GPIO.output( lightPin, GPIO.HIGH )
 				self.manager.current = "thermostatUI"
 				log( LOG_LEVEL_DEBUG, CHILD_DEVICE_SCREEN, MSG_SUBTYPE_TEXT, "Full" )
 			return True
