@@ -188,15 +188,15 @@ Ogni livello di log include anche tutte le informazioni del livello precedente. 
 
 
 ##Credits
-Grazie a [chaeron ] (https://github.com/chaeron) che è lo sviluppatore 
+Grazie a [chaeron ] (https://github.com/chaeron) che è lo sviluppatore che ha iniziato il progetto
+
+Grazie a [athos/jpnos26](https://github.com/jpnos26) per lo sviluppo aggiuntivo del progetto attuale
+
+Grazie a [Painbrain](www.raspberryitaly.com) per la localizzazione in italiano e il nuovo design grafico
 
 Grazie a [Jeff - The Nooganeer](http://www.nooganeer.com/his/category/projects/homeautomation/raspberry-pi-thermostat/), ispiratore dell'hardware necessario al progetto.
  
 Grazie a [Nich Fugal/Makeatronics](http://makeatronics.blogspot.com/2013/06/24v-ac-solid-state-relay-board.html) per il suo utilissimo 24V AC Solid State Relay Board.
-
-Grazie a [athos/jpnos26](https://github.com/jpnos26) per lo sviluppo aggiuntivo del progetto
-
-Grazie a [Painbrain](www.raspberryitaly.com) per la localizzazione in italiano e un nuovo design grafico
 
 ##Additional Notes/Comments:
 
